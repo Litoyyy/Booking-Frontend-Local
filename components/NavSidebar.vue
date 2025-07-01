@@ -14,7 +14,7 @@
             <div class="nav-sidebar__header">
                 <div class="nav-sidebar__header__info">
                     <div class="nav-sidebar__header__avatar">
-                        <img src="/_nuxt/assets/images/stub.webp" alt="avatar-image">
+                        <img src="/images/stub.webp" alt="avatar-image">
                     </div>
                     <div class="nav-sidebar__header__title-block">
                         <span>Измайлово</span>

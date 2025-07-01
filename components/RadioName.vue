@@ -14,7 +14,7 @@
         />
         <div class="radio-name__image">
             <img :src="res.main_photo" alt="radio image" v-if="res.main_photo">
-            <img src="/_nuxt/assets/images/stub.webp" alt="radio image" v-else>
+            <img src="/images/stub.webp" alt="radio image" v-else>
         </div>
         <div class="radio-name__title-block">
             {{ res.title }}

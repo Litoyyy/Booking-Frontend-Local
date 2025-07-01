@@ -88,8 +88,8 @@
                     </div>
                 </Dropdown>
                 <NuxtLink to="/" class="header-section__logo" v-if="headerType != 'catalog-fixed'">
-                    <img src="/_nuxt/assets/images/logo_header.png" alt="header logo" v-if="headerTheme != 'dark'">
-                    <img src="/_nuxt/assets/images/logo_header_dark.png" alt="header logo" v-if="headerTheme == 'dark'">
+                    <img src="/images/logo_header.png" alt="header logo" v-if="headerTheme != 'dark'">
+                    <img src="/images/logo_header_dark.png" alt="header logo" v-if="headerTheme == 'dark'">
                 </NuxtLink>
                 <BlockInputsTrip v-if="headerType === 'catalog-fixed'"/>
                 <ElementLink v-if="headerType != 'panel'"

@@ -31,7 +31,7 @@
             </Swiper>
             <Swiper v-bind="swiperOptions" v-else>
                 <SwiperSlide>
-                    <img src="/_nuxt/assets/images/stub.webp" alt="catalog card image"/>
+                    <img src="/images/stub.webp" alt="catalog card image"/>
                 </SwiperSlide>
                 <div class="swiper-pagination" slot="pagination"></div>
             </Swiper>
@@ -39,7 +39,7 @@
         </div>
         <div class="catalog-card__img-block" v-else>
             <img :src="res.main_photo" alt="catalog-img" v-if="res.main_photo"/>
-            <img src="/_nuxt/assets/images/stub.webp" alt="catalog-img" v-else/>
+            <img src="/images/stub.webp" alt="catalog-img" v-else/>
         </div>
         <div class="catalog-card__info-block">
             <div class="catalog-card__price-block" v-if="view == 'horizontal' || props.view == 'vertical'">

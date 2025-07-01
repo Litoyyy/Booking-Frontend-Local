@@ -355,8 +355,8 @@
                         <LanguageSelector v-if="currentlyMobile"/>
                     </div>
                     <div class="reservation__body_number__banner">
-                        <img src="/_nuxt/assets/images/reservation-banner_mobile.png" alt="reservation banner" v-if="currentlyMobile">
-                        <img src="/_nuxt/assets/images/reservation-banner.png" alt="reservation banner" v-else>
+                        <img src="/images/reservation-banner_mobile.png" alt="reservation banner" v-if="currentlyMobile">
+                        <img src="/images/reservation-banner.png" alt="reservation banner" v-else>
                     </div>
                     <div class="reservation__body_number__filters">
                         <div class="reservation__body_number__filters__desktop">

@@ -17,7 +17,7 @@
     <label :for="`service-card-input-${id}`" class="service-card" :state="props.state">
         <div class="service-card__img-block">
             <img :src="res.main_photo" alt="service-img" v-if="res.main_photo">
-            <img src="/_nuxt/assets/images/stub.webp" alt="service-img" v-else>
+            <img src="/images/stub.webp" alt="service-img" v-else>
             <ElementTag type="product-card" v-if="res.tag">
                 {{ res.tag }}
             </ElementTag>
