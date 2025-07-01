@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Onest:wght@100..900&display=swap");
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+@media (max-width: 1920px) {
+  html {
+    font-size: 0.8333vw;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  color: #2D3033;
+  font-family: "Golos Text", serif;
+}
+
+main {
+  max-width: 1921px;
+  margin: 0 auto;
+}
+@media (max-width: 1920px) {
+  main {
+    margin: 0;
+    max-width: none;
+  }
+}
+
+hr {
+  margin: 0;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
+  border: none;
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #2D3033;
+  font-family: "Onest", sans-serif;
+}
+@media (max-width: 768px) {
+  button {
+    font-size: 1.125rem;
+  }
+}
+
+.mobile-only {
+  display: none;
+}
+@media (max-width: 768px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-none {
+    display: none !important;
+  }
+}
+
+.container {
+  margin: 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+}
+@media (max-width: 768px) {
+  .container {
+    margin: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+}
+.container_admin {
+  margin: 0 3rem;
+  padding: 1.5rem 0;
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 1rem;
+  row-gap: 3rem;
+}
+
+article h2 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 132%;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 768px) {
+  article h2 {
+    font-size: 1.5rem;
+  }
+}
+article h3 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 136%;
+  letter-spacing: -0.03em;
+}
+@media (max-width: 768px) {
+  article h3 {
+    font-size: 1.25rem;
+  }
+}
+article p {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  article p {
+    font-size: 1.125rem;
+  }
+}
+article ul {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+}
+@media (max-width: 768px) {
+  article ul {
+    font-size: 1.125rem;
+  }
+}
+
+.table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  border-radius: 0.5rem;
+}
+.table tr {
+  background-color: #FFFFFF;
+}
+.table__head th {
+  border: 1px solid rgb(247, 247, 247);
+  padding: 0.75rem 1rem;
+  text-align: start;
+  text-wrap: nowrap;
+}
+.table__body td {
+  padding: 1rem;
+  border: 1px solid rgb(247, 247, 247);
+}
+.table__t2 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 148%;
+  letter-spacing: -0.01em;
+}
+@media (max-width: 768px) {
+  .table__t2 {
+    font-size: 0.875rem;
+  }
+}
+.table__t2_heading {
+  color: rgba(45, 48, 51, 0.32);
+}
+.table__t2_row {
+  color: rgba(45, 48, 51, 0.48);
+}
+.table__t1 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  text-wrap: nowrap;
+}
+@media (max-width: 768px) {
+  .table__t1 {
+    font-size: 1.125rem;
+  }
+}
+.table__t1_link {
+  color: #2D3033;
+  text-wrap: wrap;
+}
+.table__t1_tp {
+  color: rgba(45, 48, 51, 0.48);
+}
+.table__t1_icon {
+  text-align: center;
+  color: #2D3033;
+}
+.table__t1__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.table__checkbox {
+  min-width: 3.25rem;
+  width: 3.25rem;
+}
+.table__drag-icon {
+  min-width: 3.5rem;
+  width: 3.5rem;
+  cursor: grab;
+}
+.table__drag-icon svg {
+  max-width: 1.5rem;
+  max-height: 1.5rem;
+  width: 100%;
+  height: 100%;
+}
+.table__drag {
+  min-width: 4rem;
+  width: 4rem;
+}
+.table__toggle {
+  min-width: 5rem;
+  width: 5rem;
+}
+.table .fixed {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 0.5rem;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: color-mix(in srgb, #FFFFFF 92%, #2D3033 8%);
+  border-radius: 1000px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: color-mix(in srgb, #FFFFFF 84%, #2D3033 16%);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:active {
+  background-color: #2D3033;
+}
+
+/*# sourceMappingURL=main.css.map */

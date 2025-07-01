@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Onest:wght@100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    @include desktop {
+      font-size: .8333vw;
+    }
+    @include mobile {
+        font-size: 16px;
+    }
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: $text-primary;
+    font-family: "Golos Text", serif;
+    // background-color: $bg-inverse;
+}
+
+main {
+    max-width: 1921px;
+    margin: 0 auto;
+    @include desktop {
+        margin: 0;
+        max-width: none;
+    }
+}
+
+hr {
+    margin: 0;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+}
+input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+    padding: 0;
+    @include text_1;
+    color: $text-primary;
+    font-family: "Onest", sans-serif;
+}
+.mobile-only {
+    display: none;
+    @include mobile {
+        display: block;
+    }
+}
+.mobile-none {
+    @include mobile {
+        display: none !important;
+    }
+}

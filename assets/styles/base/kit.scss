@@ -1,0 +1,175 @@
+$bg-primary: #FFFFFF;
+$bg-inverse: #2D3033;
+$bg-accent: #1C5BAD;
+$bg-subaccent: #E68F6F;
+$bg-system-negative: #E66F6F;
+$bg-system-positive: #1CAD64;
+
+
+$bg-primary-transparent-8: rgba(255, 255, 255, .08);
+$bg-primary-transparent-16: rgba(255, 255, 255, .16);
+$bg-primary-transparent-32: rgba(255, 255, 255, .32);
+$bg-primary-transparent-48: rgba(255, 255, 255, .48);
+
+$bg-inverse-transparent-4: rgba(45, 48, 51, .04);
+$bg-inverse-transparent-8: rgba(45, 48, 51, .08);
+$bg-inverse-transparent-16: rgba(45, 48, 51, .16);
+$bg-inverse-transparent-32: rgba(45, 48, 51, .32);
+
+$bg-inverse-subdued-4: color-mix(in srgb, $bg-primary 96%, $bg-inverse 4%);
+$bg-inverse-subdued-8: color-mix(in srgb, $bg-primary 92%, $bg-inverse 8%);
+$bg-inverse-subdued-16: color-mix(in srgb, $bg-primary 84%, $bg-inverse 16%);
+
+$bg-accent-transparent-4: rgba(28, 91, 173, .04);
+$bg-accent-transparent-8: rgba(28, 91, 173, .08);
+$bg-accent-transparent-16: rgba(28, 91, 173, .16);
+
+$bg-subaccent-transparent-8: rgba(230, 143, 111, .08);
+
+$bg-system-negative-transparent-8: rgba(230, 111, 111, .08);
+$bg-system-negative-subdued-8: color-mix(in srgb, $bg-primary 92%, $bg-system-negative 8%);
+$bg-system-negative-transparent-32: rgba(230, 111, 111, .32);
+
+$bg-system-positive-transparent-8: rgba(28, 173, 100, .08);
+
+
+
+$text-primary: #2D3033;
+$text-inverse: #FFFFFF;
+$text-accent: #1C5BAD;
+$text-subaccent: #E68F6F;
+$text-system-negative: #E66F6F;
+$text-system-positive: #1CAD64;
+
+$text-primary-transparent-16: rgba(45, 48, 51, .16);
+$text-primary-transparent-32: rgba(45, 48, 51, .32);
+$text-primary-transparent-48: rgba(45, 48, 51, .48);
+
+$text-inverse-transparent-16: rgba(255, 255, 255, .16);
+$text-inverse-transparent-32: rgba(255, 255, 255, .32);
+$text-inverse-transparent-48: rgba(255, 255, 255, .48);
+
+$text-accent-transparent-48: rgba(28, 91, 173, .48);
+
+
+
+$icon-primary: #2D3033;
+$icon-inverse: #FFFFFF;
+$icon-accent: #1C5BAD;
+$icon-subaccent: #E68F6F;
+$icon-system-negative: #E66F6F;
+$icon-system-positive: #1CAD64;
+
+$icon-primary-transparent-16: rgba(45, 48, 51, .16);
+$icon-primary-transparent-32: rgba(45, 48, 51, .32);
+$icon-primary-transparent-48: rgba(45, 48, 51, .48);
+
+$icon-inverse-transparent-16: rgba(255, 255, 255, .16);
+$icon-inverse-transparent-32: rgba(255, 255, 255, .32);
+$icon-inverse-transparent-48: rgba(255, 255, 255, .48);
+
+$icon-accent-transparent-48: rgba(28, 91, 173, .48);
+
+
+$border-primary: #2D3033;
+$border-inverse: #FFFFFF;
+$border-accent: #1C5BAD;
+$border-subaccent: #E68F6F;
+$border-system-negative: #E66F6F;
+$border-system-positive: #1CAD64;
+
+$border-primary-transparent-4: rgba(45, 48, 51, .04);
+$border-primary-transparent-8: rgba(45, 48, 51, .08);
+$border-primary-transparent-16: rgba(45, 48, 51, .16);
+
+$border-inverse-transparent-4: rgba(255, 255, 255, .04);
+$border-inverse-transparent-8: rgba(255, 255, 255, .08);
+$border-inverse-transparent-16: rgba(255, 255, 255, .16);
+
+$border-accent-transparent-8: rgba(28, 91, 173, .08);
+$border-accent-transparent-16: rgba(28, 91, 173, .16);
+
+$border-primary-subdued-4: rgb(247, 247, 247);
+$border-primary-subdued-8: rgb(238, 238, 239);
+
+@mixin heading_0{
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: 2.25rem;
+    }
+}
+@mixin heading_1{
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 124%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: 1.75rem;
+    }
+}
+@mixin heading_2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    line-height: 132%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: 1.5rem;
+    }
+}
+@mixin heading_3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 136%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: 1.25rem;
+    }
+}
+@mixin strong_1{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    @include mobile {
+        font-size: 1.125rem;
+    }
+}
+@mixin strong_2{
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 148%;
+    letter-spacing: -0.01em;
+    @include mobile {
+        font-size: .875rem;
+    }
+}
+@mixin text_1{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    @include mobile {
+        font-size: 1.125rem;
+    }
+}
+@mixin text_2{
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 148%;
+    letter-spacing: -0.01em;
+    @include mobile {
+        font-size: .875rem;
+    }
+}
+@mixin text_3{
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 146%;
+    letter-spacing: -0.03em;
+    @include mobile {
+        font-size: .75rem;
+    }
+}

@@ -1,0 +1,582 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="color-scheme" content="dark">
+    <title>Booking details</title>
+    <style type="text/css">
+
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            font-family: "Golos Text", sans-serif;
+            box-sizing: border-box;
+        }
+
+        :root {
+            color-scheme: only light;
+            supported-color-schemes: light;
+        }
+
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            padding-top: 1.5rem;
+        }
+
+        table {
+            border-spacing: 0;
+            mso-cellspacing: 0;
+            mso-padding-alt: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        td, p, h1, h2, h3, a {
+            padding: 0;
+            margin: 0;
+        }
+
+        a {
+            all: unset;
+        }
+
+        p {
+            width: fit-content;
+        }
+
+        hr {
+            width: 100%;
+            height: 0.0625rem;
+            border: none;
+            background-color: #2d303314;
+            margin: 0;
+            margin-top: 1rem;
+        }
+
+        h1 {
+            color: #2D3033;
+            font-size: 2.25rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            color: #2D3033;
+            font-size: 1.75rem;
+            font-weight: 500;
+        }
+
+        h3 {
+            color: #2D3033;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .container {
+            padding: 0rem 1.5rem;
+        }
+
+        .block {
+            display: block;
+        }
+
+        .table-block {
+            background-color: #ffffff !important;
+            border-radius: 0.5rem;
+            padding: 2rem;
+        }
+
+        .table-info {
+            background-color: #ffffff !important;
+            padding-top: 2rem;
+            display: block;
+        }
+
+        .row {
+            width: 100%;
+            padding-top: 1rem;
+        }
+
+        .key {
+            width: 50%;
+            padding-right: .5rem;
+        }
+
+        .key p {
+            color: #2d30337a;
+            white-space: normal;
+        }
+
+        .value {
+            width: 100%;
+            padding-left: .5rem;
+        }
+
+        .value p {
+            color: #2D3033;
+            white-space: normal;
+        }
+
+        .logo {
+            width: 4.5rem;
+            height: 4.5rem;
+        }
+
+        .w-4_5 {
+            width: 4.5rem;
+        }
+
+        .pl-1 {
+            padding-left: 1rem;
+        }
+
+        .pt-0_5 {
+            padding-top: 0.5rem;
+        }
+
+        .pt-0_75 {
+            padding-top: .75rem;
+        }
+
+        .pt-1 {
+            padding-top: 1rem;
+        }
+
+        .pt-1_5 {
+            padding-top: 1.5rem;
+        }
+
+        .pt-2 {
+            padding-top: 2rem;
+        }
+
+        .pb-1_5 {
+            padding-bottom: 1.5rem;
+        }
+
+        .mt-1 {
+            margin-top: 1rem;
+        }
+
+        .white-text {
+            color: #ffffff !important;
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .text_1 {
+            color:#2D3033;
+            font-size: 1.25rem;
+            font-weight: 400;
+        }
+
+        .text_2 {
+            font-size: 1rem;
+            font-weight: 400;
+        }
+
+        .text_3 {
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #ffffff !important;
+        }
+
+        .space-nowrap {
+            white-space: wrap;
+        }
+
+        .text-center {
+            width: 100%;
+            text-align: center;
+        }
+
+        .white {
+            color: #ffffff !important;
+        }
+
+        .blue {
+            color: #1C5BAD !important;
+        }
+
+        .hide-mobile {}
+
+        .hide-desktop {
+            width: 100%;
+            display: none !important;
+            mso-hide: all;
+        }
+
+        .s1 {
+            font-size: 1.25rem;
+            font-weight: 500;
+        }
+
+        @media screen and (max-width: 599.98px) {
+            .hide-mobile {
+                display: none !important;
+                mso-hide: all;
+            }
+            .hide-desktop {
+                display: table-row !important;
+                width: 100%;
+            }
+            .s1 {
+                font-size: 1.125rem;
+                font-weight: 500;
+            }
+            h1 {
+                font-size: 1.75rem;
+                font-weight: 500;
+            }
+            h2 {
+                font-size: 1.5rem;
+                font-weight: 500;
+            }
+            h3 {
+                font-size: 1.25rem;
+                font-weight: 500;
+            }
+            .text_1 {
+                font-size: 1.125rem;
+                font-weight: 400;
+            }
+            .text_2 {
+                font-size: 0.875rem;
+                font-weight: 400;
+            }
+            .text_3 {
+                font-size: 0.75rem;
+                font-weight: 400;
+            }
+            .w-4_5 {
+                aspect-ratio: 1/1;
+            }
+            .pt-0_75 {
+                padding-top: 0.5rem;
+            }
+            .pt-1 {
+                padding-top: 0.75rem;
+            }
+            .button {
+                height: 3.0625rem;
+            }
+        }
+
+        .button {
+            width: 100%;
+            height: 3.75rem;
+            border-radius: 0.5rem;
+            background-color: #E68F6F;
+            border: none;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .button p {
+            width: 100%;
+            text-align: center;
+        }
+
+    </style>
+</head>
+    <body 
+        style="
+            background-color: #1C5BAD;
+            position: relative;
+        ">
+        <table 
+            class="container pt-1_5">
+            <tr>
+                <td 
+                    colspan="1"
+                    class="w-4_5">
+                    <img class="logo" src="./logo.png" alt="">
+                </td>
+                <td 
+                    class="pl-1"
+                    style="width: 15.5rem;
+                    white-space: normal;">
+                    <h2 class="white">
+                        Hotel name
+                    </h2>
+                    <p 
+                        style="
+                            font-size: 1.25rem;
+                            font-weight: 500;
+                            color: #ffffff;
+                        ">
+                        City
+                    </p>
+                </td>
+                <td class="hide-mobile" align="right">
+                    <p 
+                        class="white-text">
+                        Гостиница Измайлово Гамма-Дельте «Люкс-Лайм»
+                    </p>
+                    <p
+                        class="white"
+                        style="
+                            padding-top: 0.25rem;
+                        ">
+                        г. Москва, Измайловское ш., д. 71
+                    </p>
+                    <p 
+                        class="white-text"
+                        style="
+                            padding-top: 0.25rem;
+                        ">
+                        Круглосуточно: +7 495 215 10 95, +7 499 391 39 23
+                    </p>
+                </td>
+            </tr>
+            <tr class="hide-desktop">
+                <td colspan="3">
+                    <p 
+                        class="white-text pt-0_5">
+                        Гостиница Измайлово Гамма-Дельте «Люкс-Лайм»
+                    </p>
+                    <p 
+                        class="white"
+                        style="
+                            padding-top: 0.25rem;
+                        ">
+                        г. Москва, Измайловское ш., д. 71
+                    </p>
+                    <p 
+                        class="white-text"
+                        style="
+                            padding-top: 0.25rem;
+                        ">
+                        Круглосуточно: +7 495 215 10 95, +7 499 391 39 23
+                    </p>
+                </td>
+            </tr>
+        </table>
+
+        <div 
+            class="container"
+            style="
+                padding-top: 2.5rem !important;
+            ">
+            <div 
+                class="table-block block"
+                style="
+                    color: #2D3033;
+                    background-color: #ffffff;
+                ">
+                <h1
+                    style="
+                        color: #2D3033;
+                        background-color: #ffffff;
+                    ">
+                    Здравствуйте, Иван Васильевич!
+                </h1>
+                <p 
+                    class="text_1"
+                    style="
+                        padding-top: 1rem;
+                        color: #2D3033;
+                        background-color: #ffffff;
+                    ">
+                    Вы забронировали проживание в Гостиница Измайлово.
+                </p>
+                <p class="text_1 pt-0_5">
+                    Предлагаем Вам оплатить бронирование уже сейчас, чтобы сэкономить время при заселении.
+                </p>
+            </div>
+        </div>
+    
+        <div 
+            class="container pt-0_75">
+            <div 
+                data-ogsc="" 
+                data-ogsb=""
+                bgcolor="#ffffff" 
+                style="background-color: #fff !important;" class="table-block block">
+
+                <h2>
+                    <font color="#2D3033">
+                        Детали бронирования
+                    </font>
+                </h2>
+                
+                <div class="table-info">
+
+                    <table class="row">
+                        <tr>
+                            <td 
+                                valign="top" 
+                                class="key text_1">
+                                <p>Период размещения</p>
+                            </td>
+                            <td 
+                                valign="top"
+                                class="value text_1">
+                                <p>11-16 октября (5 ночей)</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table class="row">
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1">
+                                <p>Номер</p>
+                            </td>
+                            <td 
+                                valign="top"
+                                class="value text_1">
+                                <p>Стандарт с широкой кроватью</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table class="row">
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1">
+                                <p>Тариф</p>
+                            </td>
+                            <td
+                                valign="top"
+                                class="value text_1">
+                                <p>Long Stay</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table class="row">
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1">
+                                <p>Доп.услуги</p>
+                            </td>
+                            <td
+                                valign="top"
+                                class="value text_1">
+                                <p>Завтрак «Шведский стол», Трансферт из аэропорта</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table class="row">
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1">
+                                <p>Стоимость номера</p>
+                            </td>
+                            <td
+                                valign="top"
+                                class="value text_1">
+                                <p>6 500,00 ₽</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table class="row">
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1">
+                                <p>Стоимость услуг</p>
+                            </td>
+                            <td
+                                valign="top"
+                                class="value text_1">
+                                <p>1 000,00 ₽</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1 pt-1">
+                                <p>Завтрак  «Шведский стол»</p>
+                            </td>
+                            <td
+                                valign="top"
+                                class="value text_1 pt-1">
+                                <p class="s2">0,00 ₽ (включено)</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1 pt-0_5">
+                                <p>Трансферт из аэропорта</p>
+                            </td>
+                            <td
+                                valign="top"
+                                class="value text_1 pt-0_5">
+                                <p class="s2">1 000,00 ₽</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <hr>
+
+                    <table class="row">
+                        <tr>
+                            <td 
+                                valign="top"
+                                class="key text_1">
+                                <h2>Итого</h2>
+                            </td>
+                            <td
+                                valign="top"
+                                class="value text_1">
+                                <h2>7 500,00 ₽</h2>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <table class="pt-2">
+                        <tr>
+                            <td align="center" valign="center" class="button">
+                                <p class="white s1">Оплатить бронирование</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container pt-0_75">
+            <div class="table-block block">
+                <h3>
+                    С уважением, служба бронирования Гостиница Измайлово
+                </h3>
+            </div>
+        </div>
+
+        <div align="center" class="container pt-1_5 pb-1_5">
+            <p class="text_3 text-center">
+                © 2024 Гостиница Измайлово Гамма-Дельта «Люкс-Лайн», г. Москва, Измайловское ш., д. 71 <br> Письмо автоматически сформировано BookingModule
+            </p>
+            <p class="text_2 text-center pt-1_5 white">
+                Отписаться от рассылки
+            </p>
+        </div>
+
+    </body>
+</html>

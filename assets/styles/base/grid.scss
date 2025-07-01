@@ -1,0 +1,14 @@
+.container{
+  margin: 0 3rem;
+  @include grid(12, 1rem);
+  @include mobile {
+    margin: 0 1rem;
+    @include grid(2, 1rem);
+  }
+  &_admin {
+    margin: 0 3rem;
+    padding: 1.5rem 0;
+    @include grid(12, 1rem);
+    row-gap: 3rem;
+  }
+}

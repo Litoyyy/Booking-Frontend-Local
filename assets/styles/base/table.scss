@@ -1,0 +1,88 @@
+.table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-radius: .5rem;
+
+    tr {
+        background-color: $bg-primary;
+    }
+
+    &__head {
+        th {
+            border: 0.0625rem solid $border-primary-subdued-4;
+            padding: .75rem 1rem;
+            text-align: start;
+            text-wrap: nowrap;
+        }
+    }
+
+    &__body {
+        td {
+            padding: 1rem;
+            border: 1px solid $border-primary-subdued-4;
+        }
+    }
+
+    &__t2 {
+        @include text_2;
+        &_heading {
+            color: $text-primary-transparent-32;
+        }
+        &_row {
+            color: $text-primary-transparent-48;
+        }
+    }
+
+    &__t1 {
+        @include text_1;
+        text-wrap: nowrap;
+
+        &_link {
+            color: $text-primary;
+            text-wrap: wrap;
+        }
+        &_tp {
+            color: $text-primary-transparent-48;
+        }
+        &_icon {
+            text-align: center;
+            color: $text-primary;
+        }
+        &__button {
+            @include df_ac_jcc;
+        }
+    }
+
+
+
+    &__checkbox {
+        min-width: 3.25rem;
+        width: 3.25rem;
+    }
+    &__drag-icon {
+        min-width: 3.5rem;
+        width: 3.5rem;
+        cursor: grab;
+        svg {
+            max-width: 1.5rem;
+            max-height: 1.5rem;
+            @include wh_100;
+        }
+        .popover {
+            cursor: grab;
+        }
+    }
+    &__drag {
+        min-width: 4rem;
+        width: 4rem;
+    }
+    &__toggle {
+        min-width: 5rem;
+        width: 5rem;
+    }
+    .fixed {
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+}
