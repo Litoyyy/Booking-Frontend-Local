@@ -35,7 +35,7 @@
                 
                 <div class="letter__header">
                     <div class="letter__header__img-container">
-                        <img src="../../../../../assets/images/logo_hotel.png" alt="">
+                        <img src="/_nuxt/assets/images/logo_hotel.png" alt="">
                     </div>
 
                     <div class="letter__header__title-block">
